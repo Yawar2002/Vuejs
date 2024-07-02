@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <h1>
     <li class="d-flex align-items-center list-group-item">
       <button
@@ -61,7 +61,7 @@ export default {
 }
 </style>
 
-<!-- <template>
+<template>
   <li class="list-group-item">
     {{ todo.todoString }}
   </li>
@@ -78,4 +78,4 @@ export default {
 };
 </script>
 
-<style></style> -->
+<style></style> --> 

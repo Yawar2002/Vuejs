@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <form @submit.prevent="addTodo()" action class="col-12 cil-lf-6">
     <input
       v-model="NewTodo"
@@ -25,4 +25,4 @@ export default {
   },
 };
 </script>
-<style scoped></style>
+<style scoped></style> -->

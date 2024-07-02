@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -23,9 +23,9 @@
             @on-edit="editTodo(todo, $event)"
           />
 
-          <!-- <li v-for="(todo, index) in todos" :key="index">
+          <li v-for="(todo, index) in todos" :key="index">
             {{ todo.todoString }}
-          </li> -->
+          </li> 
         </ul>
       </div>
     </div>
@@ -70,4 +70,4 @@ export default {
   },
 };
 </script>
-<style></style>
+<style></style> -->
