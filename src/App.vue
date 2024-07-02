@@ -1,16 +1,17 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
   <HelloWorld msg="Welcome to Al-Nafi" />
+
 </template>
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
-import index from"./components/index";
+
 export default {
   name: "App",
   components: {
     HelloWorld,
-    index,
+    
   },
 };
 </script>
@@ -20,9 +21,10 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  text-align: left;
   color: #2c3e50;
   margin-top: 60px;
+  margin-left: 60px;
 }
 body {
   background-color: rgb(172, 127, 200);
@@ -74,4 +76,4 @@ body {
   color: aliceblue;
   text-decoration-color: rgb(37, 41, 41);
 }
-</style> 
+</style>  -->
