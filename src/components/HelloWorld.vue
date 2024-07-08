@@ -59,7 +59,7 @@ Add "scoped" attribute to limit CSS to this component only
         color: #42b983;
     }
 </style> -->
- <template>
+ <!-- <template>
     <div class="hello">
         <h1>{{ msg }}</h1> 
     </div>
@@ -89,4 +89,4 @@ li {
 a {
   color: #42b983;
 }
-</style> 
+</style>  -->

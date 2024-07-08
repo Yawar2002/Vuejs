@@ -21,7 +21,7 @@ count:0
 <style>
 
 </style>  -->
-<template>
+<!-- <template>
   <h1>alnafiffvcvvvfvf</h1>
   <input type="text" v-model="count">
   <h2>{{ count }}</h2>
@@ -37,7 +37,7 @@ export default {
     }
   }
 };
-</script>
+</script> -->
 
 <style>
 button {

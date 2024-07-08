@@ -47,7 +47,7 @@
 </style> -->
 
 
-<template>
+<!-- <template>
     <h1 v-on:mousemove="getConsole()">Home components</h1>
 
     <button v-on:Click="getData('button 1 click')">Click Me</button>
@@ -105,4 +105,4 @@ count:0
 <style>
 
 </style>
- -->
+ --> -->

@@ -1,6 +1,7 @@
  <!-- <template>
 <img alt="Vue logo" src="./assets/logo.png" /> --
 <HelloWorld msg="Welcome to Al-Nafi" /> 
+
 <myHome/>
 <twobinding/>
 </template>
@@ -21,26 +22,50 @@
 </script> --> 
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
-  <HelloWorld msg="Welcome to Al-Nafi" />
-  <myHome />
-  <TwoBinding /> <!-- Use the correct name as per import -->
+  <!-- <HelloWorld msg="Welcome to Al-Nafi" /> -->
+  <h1>Wellcome to Alnafi</h1>
+  <!-- <myHome />
+  <TwoBinding />  -->
+  <!-- <CheckBox /> -->
+   
+  <ChildPre name="Yassir" :email="email" :getData="getData"/>
 </template>
 
 <script>
-// Importing components
-import HelloWorld from "./components/HelloWorld.vue";
-import myHome from "./components/myHome.vue";
-import TwoBinding from "./components/TwoBinding.vue"; 
+  import ChildPre from "./components/ChildPre.vue";
+  // import CheckBox from "./components/CheckBox.vue";
+// import HelloWorld from "./components/HelloWorld.vue";
+// import myHome from "./components/myHome.vue";
+// import TwoBinding from "./components/TwoBinding.vue"; 
 
 export default {
-  name: "App",
+  // names: "App",
+  // // components: {
+  //   HelloWorld,
+  //    myHome,
+  //   TwoBinding
+  // }
+  //   Namess: "CheckBox",
+  // components: {
+  //       CheckBox
+  // }
   components: {
-    HelloWorld,
-     myHome,
-    TwoBinding
-  }
+    ChildPre
+  },
+  data(){
+    return{
+      name: 'Yassir', email: 'Yassir@gmail.com'
+    }  
+  },
+ 
+ methods:{
+      getData(){
+        console.warn("Perent function called");
+        alert('Hello')
+      }
+ }
 };
-</script>
+</script> 
 
 <style>
 #app {
