@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
    <div>   
       <h2>{{name}}</h2>   
     <h2>{{email}}</h2> 
@@ -18,4 +18,4 @@
  </script>
  <style>
  
- </style>
+ </style> -->

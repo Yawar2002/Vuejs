@@ -1,90 +1,93 @@
- <!-- <template>
+<!-- <template>
 <img alt="Vue logo" src="./assets/logo.png" /> --
-<HelloWorld msg="Welcome to Al-Nafi" /> 
+<HelloWorld msg="Welcome to Al-Nafi" />
 
-<myHome/>
-<twobinding/>
+<myHome />
+<twobinding />
 </template>
 
 <script>
     import twoBinding from "./twoBinding.vue";
-     import HelloWorld from "./components/HelloWorld.vue";
-     import myHome from "./components/myHome.vue";
+    import HelloWorld from "./components/HelloWorld.vue";
+    import myHome from "./components/myHome.vue";
     export default {
         name: "App",
-              components: {
+        components: {
             HelloWorld,
             myHome,
             twoBinding
         },
-       
-        };
-</script> --> 
+
+    };
+</script> -->
 <template>
-  <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
-  <!-- <HelloWorld msg="Welcome to Al-Nafi" /> -->
-  <h1>Wellcome to Alnafi</h1>
-  <!-- <myHome />
+    <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
+    <!-- <HelloWorld msg="Welcome to Al-Nafi" /> -->
+    <h1>Wellcome to Alnafi</h1>
+    <!-- <myHome />
   <TwoBinding />  -->
-  <!-- <CheckBox /> -->
-   
-  <ChildPre name="Yassir" :email="email" :getData="getData"/>
+    <!-- <CheckBox /> -->
+    <!-- <ul>
+        <li v-for="item in ReUse" :key="item.name">
+            {{ item.name }}
+             <br>
+            {{ item.email }}
+            <button v-on:click="getData(name)">Alert Name</button>
+        </li>
+    </ul> -->
+    <!-- <ReUse /> -->
+    <!-- <ChildPre name="Yassir" :email="email" :getData="getData"/> -->
+     <ClassBin />
 </template>
 
 <script>
-  import ChildPre from "./components/ChildPre.vue";
-  // import CheckBox from "./components/CheckBox.vue";
-// import HelloWorld from "./components/HelloWorld.vue";
-// import myHome from "./components/myHome.vue";
-// import TwoBinding from "./components/TwoBinding.vue"; 
+     import ClassBin from "./components/ClassBin.vue";
 
-export default {
-  // names: "App",
-  // // components: {
-  //   HelloWorld,
-  //    myHome,
-  //   TwoBinding
-  // }
-  //   Namess: "CheckBox",
-  // components: {
-  //       CheckBox
-  // }
-  components: {
-    ChildPre
-  },
-  data(){
-    return{
-      name: 'Yassir', email: 'Yassir@gmail.com'
-    }  
-  },
- 
- methods:{
-      getData(){
-        console.warn("Perent function called");
-        alert('Hello')
-      }
- }
-};
-</script> 
+    //import ChildPre from "./components/ChildPre.vue";
+    // import CheckBox from "./components/CheckBox.vue";
+    // import HelloWorld from "./components/HelloWorld.vue";
+    // import myHome from "./components/myHome.vue";
+    // import TwoBinding from "./components/TwoBinding.vue"; 
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: left;
-  color: #050505;
-  margin-top: 60px;
-  margin-left: 60px;
-}
+    export default {
+        // names: "App",
+        // // components: {
+        //   HelloWorld,
+        //    myHome,
+        //   TwoBinding
+        // }
+        //   Namess: "CheckBox",
+        // components: {
+        //       CheckBox
+        // }
+        //   
+        // components: {
+        //     ReUse
+        // },
+        // data() {
+        //     return {
+        //         ReUse: [{
+        //                 name: 'Ali',
+        //                 email: 'ali@gmail.com'
+        //             },
+        //             {
+        //                 name: 'Ali',
+        //                 email: 'ali@gmail.com'
+        //             },
+        //             {
+        //                 name: 'Ali',
+        //                 email: 'ali@gmail.com'
+        //             }
+        //         ]
+        //     }
+        // }
+        omponents: {
+              ClassBin
+        }
+    };
+</script>
 
-body {
-  background-color: hsl(0, 0%, 86%);
-}
-</style>
-
-
-<style>
+<style scope>
     #app {
         font-family: Avenir, Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
@@ -93,13 +96,14 @@ body {
         color: #050505;
         margin-top: 60px;
         margin-left: 60px;
-      
     }
 
     body {
         background-color: hsl(0, 0%, 86%);
     }
-</style> 
+</style>
+
+
 <!-- <template>
   <div>
     <h1>Hellow From Karachi</h1>
@@ -146,4 +150,4 @@ body {
   color: aliceblue;
   text-decoration-color: rgb(37, 41, 41);
 }
-</style>  --> 
+</style>  -->
