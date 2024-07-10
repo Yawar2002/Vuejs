@@ -81,7 +81,7 @@
         //         ]
         //     }
         // }
-        omponents: {
+        components: {
               ClassBin
         }
     };
