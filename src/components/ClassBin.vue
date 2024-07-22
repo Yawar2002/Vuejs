@@ -1,6 +1,6 @@
-<template>
+<!-- <template>
 <h2>ClassBin</h2>
-<!-- <h3 :class="{green:colorfull}">Class Binding</h3> -->
+<h3 :class="{green:colorfull}">Class Binding</h3>
 <h3 :class="applyStyle">Class Binding</h3>
 <button v-on:click="colorfull=!colorfull">Apply On</button>
 </template>
@@ -37,4 +37,4 @@ export default {
 .other{
     font-size: 50px;
 }
-</style>
+</style> -->

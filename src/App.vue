@@ -24,6 +24,7 @@
     <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
     <!-- <HelloWorld msg="Welcome to Al-Nafi" /> -->
     <h1>Wellcome to Alnafi</h1>
+    <h3>{{ childUser }}</h3>
     <!-- <myHome />
   <TwoBinding />  -->
     <!-- <CheckBox /> -->
@@ -37,12 +38,13 @@
     </ul> -->
     <!-- <ReUse /> -->
     <!-- <ChildPre name="Yassir" :email="email" :getData="getData"/> -->
-     <ClassBin />
+     <!-- <ClassBin /> -->
+     <childParent :getUser="getUserName"/>
 </template>
 
 <script>
-     import ClassBin from "./components/ClassBin.vue";
-
+     import childParent from"./components/childParent.vue";
+    //  import ClassBin from "./components/ClassBin.vue";
     //import ChildPre from "./components/ChildPre.vue";
     // import CheckBox from "./components/CheckBox.vue";
     // import HelloWorld from "./components/HelloWorld.vue";
@@ -81,8 +83,23 @@
         //         ]
         //     }
         // }
+        // components: {
+        //       ClassBin,
+        //       childParent
+        // }
+        data(){
+            return {
+              childUser:""
+            }
+        },
         components: {
-              ClassBin
+              childParent
+        },
+        methods: {
+          getUserName(name){
+            // alert(User)
+           this.childUser=name;
+          }
         }
     };
 </script>
