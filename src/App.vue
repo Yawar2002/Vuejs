@@ -22,9 +22,9 @@
 </script> -->
 <template>
     <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
-    <!-- <HelloWorld msg="Welcome to Al-Nafi" /> -->
-    <h1>Wellcome to Alnafi</h1>
-    <h3>{{ childUser }}</h3>
+    <HelloWorld msg="Welcome to Al-Nafi" />
+     <h1>Wellcome to Alnafi</h1> 
+   
     <!-- <myHome />
   <TwoBinding />  -->
     <!-- <CheckBox /> -->
@@ -39,17 +39,22 @@
     <!-- <ReUse /> -->
     <!-- <ChildPre name="Yassir" :email="email" :getData="getData"/> -->
      <!-- <ClassBin /> -->
-     <childParent :getUser="getUserName"/>
+     <!-- <childParent :getUser="getUserName"/> -->
+      <!-- <SimForm data="Some data" id="data-cmp"/> -->
+       <SlotsNote/>
 </template>
 
 <script>
-     import childParent from"./components/childParent.vue";
+    // import SimForm from "./components/SimForm.vue";
+    // import childParent from"./components/childParent.vue";
     //  import ClassBin from "./components/ClassBin.vue";
     //import ChildPre from "./components/ChildPre.vue";
     // import CheckBox from "./components/CheckBox.vue";
     // import HelloWorld from "./components/HelloWorld.vue";
     // import myHome from "./components/myHome.vue";
     // import TwoBinding from "./components/TwoBinding.vue"; 
+    import SlotsNote from './components/SlotsNote.vue';
+
 
     export default {
         // names: "App",
@@ -87,19 +92,25 @@
         //       ClassBin,
         //       childParent
         // }
-        data(){
-            return {
-              childUser:""
-            }
-        },
-        components: {
-              childParent
-        },
-        methods: {
-          getUserName(name){
-            // alert(User)
-           this.childUser=name;
-          }
+        // data(){
+        //     return {
+        //       childUser:""
+        //     }
+        // },
+        // components: {
+        //       childParent
+        // },
+        // methods: {
+        //   getUserName(name){
+        //     // alert(User)
+        //    this.childUser=name;
+        //   }
+        // }
+        components:{
+
+          // SimForm
+          SlotsNote
+
         }
     };
 </script>

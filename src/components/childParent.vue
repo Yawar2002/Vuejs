@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
     <h1>Child to Parent</h1>
     <button v-on:Click="getUser(UserName)">Click On</button>
     
@@ -33,4 +33,4 @@ export default {
 </script>
 <style>
 
-</style>
+</style> -->
